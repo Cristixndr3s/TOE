@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+
+    </br><a href="https://transacciones.colsubsidio.com/ryd/portalpiscilago/#/compra/planclass=" onclick="clicAlternativa('Pasaporte de ingreso', '313', '23000', 'Pasaporte de ingreso', '1')">Compra aquí</a>
+    <a href="https://transacciones.colsubsidio.com/ryd/portalpiscilago/#/compra/plan" onclick="clicAlternativa('Piscitour', '313', '44200', 'Piscitour', '2')">Compra aquí</a>
+
+    <script>
+    /*Impresión tarjetas Alternativas Home*/
+    $(document).ready(function(){
+      dataLayer.push({
+      'event': 'productimpression',
+      'UES':'RyD',
+        'ecommerce': {
+        'currencyCode': 'COP',
+          'impressions': [
+           {
+             'name': 'Pasaporte de ingreso',
+             'id': '316',
+             'price': '23000',
+             'brand': 'Colsubsidio',
+             'category': 'Pasaporte de ingreso',
+             'list': 'planes-y-horarios',
+             'position': '1'
+           },{
+             'name': 'Piscitour',
+             'id': '314',
+             'price': '44200',
+             'brand': 'Colsubsidio',
+             'category': 'Piscitour',
+             'list': 'planes-y-horarios',
+             'position': '2'
+          }]
+        }
+      });
+    })
+
+    /*Clic tarjetas Alternativas Home*/
+    function clicAlternativa(NombreAlternativa, IdAlternativa, PrecioAlternativa, CategoriaAlternativa, NumPosicion){
+    dataLayer.push({
+      'event': 'productClick',
+      'UES':'RyD',
+        'ecommerce': {
+        'click': {
+          'actionField': {'list': 'planes-y-horarios'},
+          'products': [
+           {
+            'name': NombreAlternativa,
+            'id': IdAlternativa,
+            'price': PrecioAlternativa,
+            'brand': 'Colsubsidio',
+            'category': CategoriaAlternativa,
+            'position': NumPosicion
+           }
+          ]
+         }
+        },
+     });
+    }
+    </script>
+
+
+
+
+
+
+
+
+  </body>
+</html>
