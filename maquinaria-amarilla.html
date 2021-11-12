@@ -1,0 +1,118 @@
+<div id='crmWebToEntityForm' class='zcwf_lblTopBottom crmWebToEntityForm' style='background-color: white;color: black;max-width: 404px;'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+   <META HTTP-EQUIV ='content-type' CONTENT='text/html;charset=UTF-8'>
+   <form action='https://crm.zoho.com/crm/WebToLeadForm' name=WebToLeads4543897000011502402 method='POST' onSubmit='javascript:document.charset="UTF-8"; return checkMandatory4543897000011502402()' accept-charset='UTF-8'>
+ <input type='text' style='display:none;' name='xnQsjsdp' value='f9888c726817d078a9915baddeea7f0fd21df48d674f2f5f8714a158263d683c'></input>
+ <input type='hidden' name='zc_gad' id='zc_gad' value=''></input>
+ <input type='text' style='display:none;' name='xmIwtLD' value='04130987ac71951bace7a27e0ac69b6e5f3d9058db159ed86bb5eac5d7c792c6'></input>
+ <input type='text'  style='display:none;' name='actionType' value='TGVhZHM='></input>
+ <input type='text' style='display:none;' name='returnURL' value='https&#x3a;&#x2f;&#x2f;landingrentandes.com&#x2f;thank-you&#x2f;' > </input>
+
+ <div class="one-half"><div class='zcwf_row'><div class='zcwf_col_lab' style='font-size:12px; font-family: Arial;'><label for='Last_Name'>&nbsp<span style='color:red;'></span></label></div><div class='zcwf_col_fld'><input placeholder="Nombre" type='text' id='Last_Name' name='Last Name' maxlength='80'></input><div class='zcwf_col_help'></div></div></div></div>
+ <div class="one-half last"> <div class='zcwf_row'><div class='zcwf_col_lab' style='font-size:12px; font-family: Arial;'><label for='Company'>&nbsp<span style='color:red;'></span></label></div><div class='zcwf_col_fld'><input placeholder="Empresa" type='text' id='Company' name='Company' maxlength='100'></input><div class='zcwf_col_help'></div></div></div></div>
+ <div class="one-half"><div class='zcwf_row'><div class='zcwf_col_lab' style='font-size:12px; font-family: Arial;'><label for='Email'>&nbsp<span style='color:red;'></span></label></div><div class='zcwf_col_fld'><input placeholder="Email" type='text' ftype='email' id='Email' name='Email' maxlength='100'></input><div class='zcwf_col_help'></div></div></div></div>
+ <div class="one-half last"><div class='zcwf_row'><div class='zcwf_col_lab' style='font-size:12px; font-family: Arial;'><label for='Mobile'>&nbsp<span style='color:red;'></span></label></div><div class='zcwf_col_fld'><input placeholder="Teléfono" type='text' id='Mobile' name='Mobile' maxlength='30'></input><div class='zcwf_col_help'></div></div></div></div>
+ <div class='zcwf_row'><div class='zcwf_col_lab' style='font-size:12px; font-family: Arial;'><label for='Description'>&nbsp</label></div><div class='zcwf_col_fld'><textarea placeholder="Mensaje" id='Description' name='Description'style="width: 100%; height: 20vh;"></textarea><div class='zcwf_col_help'></div></div></div><div class='zcwf_row'><div class='zcwf_privacy'><div class='dIB vat' align='left'><div class='displayPurpose  f13'><label class='newCustomchkbox-md dIB w100per' style="color:#8c8c8c !important;"><input autocomplete='off' id='privacyTool4543897000002106001' type='checkbox' name='privacyTool' onclick='disableErr4543897000002106001()'> Estás aceptando los <a href="https://landing.rentandes.com/wp-content/uploads/2021/04/Terminos-y-condiciones.pdf" target="_blank">términos y condiciones</a> al presionar el botón de ENVIAR</label></div></div><div class='dIB zcwf_privacy_txt' style='font-size: 12px;font-family:Arial;color: black;'><div style='font-family: Verdana,arial,Helvetica,sans-serif;'><br></div></div> <div  id='privacyErr4543897000002106001' style='font-size:12px;color:red;padding-left: 5px;visibility:hidden;'>Por favor acepta los tyC</div></div></div><div class='zcwf_row'><div class='zcwf_col_lab'></div><div class='zcwf_col_fld'><input type='submit' id='formsubmit' class='formsubmit zcwf_button' value='Enviar' title='Submit'></div></div>
+	<script>
+		function privacyAlert4543897000011502402()
+		{
+			var privacyTool = document.getElementById('privacyTool4543897000011502402');
+			var privacyErr = document.getElementById('privacyErr4543897000011502402');
+			if(privacyTool !=undefined && !privacyTool.checked )
+			{
+				privacyErr.style.visibility='visible';
+				privacyTool.focus();
+				return false;
+			}
+			return true;
+		}
+		function disableErr4543897000011502402()
+		{
+			var privacyTool = document.getElementById('privacyTool4543897000011502402');
+			var privacyErr = document.getElementById('privacyErr4543897000011502402');
+			if(privacyTool !=undefined && privacyTool.checked && privacyErr !=undefined )
+			{
+				privacyErr.style.visibility='hidden';
+			}
+		}
+	function validateEmail4543897000011502402()
+	{
+		var form = document.forms['WebToLeads4543897000011502402'];
+		var emailFld = form.querySelectorAll('[ftype=email]');
+		var i;
+		for (i = 0; i < emailFld.length; i++)
+		{
+			var emailVal = emailFld[i].value;
+			if((emailVal.replace(/^\s+|\s+$/g, '')).length!=0 )
+			{
+				var atpos=emailVal.indexOf('@');
+				var dotpos=emailVal.lastIndexOf('.');
+				if (atpos<1 || dotpos<atpos+2 || dotpos+2>=emailVal.length)
+				{
+					alert('Introduzca una dirección de correo electrónico válida. ');
+					emailFld[i].focus();
+					return false;
+				}
+			}
+		}
+		return true;
+	}
+
+ 	  function checkMandatory4543897000011502402() {
+		var mndFileds = new Array('Company','Last Name','Email','Mobile');
+		var fldLangVal = new Array('Empresa','Nombre','Correo\x20electr\xF3nico','Tel\xE9fono');
+		for(i=0;i<mndFileds.length;i++) {
+		  var fieldObj=document.forms['WebToLeads4543897000011502402'][mndFileds[i]];
+		  if(fieldObj) {
+			if (((fieldObj.value).replace(/^\s+|\s+$/g, '')).length==0) {
+			 if(fieldObj.type =='file')
+				{
+				 alert('Seleccione un archivo para cargar.');
+				 fieldObj.focus();
+				 return false;
+				}
+			alert(fldLangVal[i] +' no puede estar vacío.');
+   	   	  	  fieldObj.focus();
+   	   	  	  return false;
+			}  else if(fieldObj.nodeName=='SELECT') {
+  	   	   	 if(fieldObj.options[fieldObj.selectedIndex].value=='-None-') {
+				alert(fldLangVal[i] +' no puede ser nulo.');
+				fieldObj.focus();
+				return false;
+			   }
+			} else if(fieldObj.type =='checkbox'){
+ 	 	 	 if(fieldObj.checked == false){
+				alert('Please accept  '+fldLangVal[i]);
+				fieldObj.focus();
+				return false;
+			   }
+			 }
+			 try {
+			     if(fieldObj.name == 'Last Name') {
+				name = fieldObj.value;
+ 	 	 	    }
+			} catch (e) {}
+		    }
+		}
+		if(!validateEmail4543897000011502402()){return false;}
+
+		if(!privacyAlert4543897000011502402()){return false;}
+		document.querySelector('.crmWebToEntityForm .formsubmit').setAttribute('disabled', true);
+	}
+
+function tooltipShow4543897000011502402(el){
+	var tooltip = el.nextElementSibling;
+	var tooltipDisplay = tooltip.style.display;
+	if(tooltipDisplay == 'none'){
+		var allTooltip = document.getElementsByClassName('zcwf_tooltip_over');
+		for(i=0; i<allTooltip.length; i++){
+			allTooltip[i].style.display='none';
+		}
+		tooltip.style.display = 'block';
+	}else{
+		tooltip.style.display='none';
+	}
+}
+</script>
+	<!-- Do not remove this --- Analytics Tracking code starts --><script id='wf_anal' src='https://crm.zohopublic.com/crm/WebFormAnalyticsServeServlet?rid=04130987ac71951bace7a27e0ac69b6e5f3d9058db159ed86bb5eac5d7c792c6gidf9888c726817d078a9915baddeea7f0fd21df48d674f2f5f8714a158263d683cgid885e3c1045bd9bdcc91bdf30f82b5696gid14f4ec16431e0686150daa43f3210513'></script><!-- Do not remove this --- Analytics Tracking code ends. --></form>
+</div>
