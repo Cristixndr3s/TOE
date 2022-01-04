@@ -1,99 +1,194 @@
-<script type="text/javascript">
-$(document).ready(function(){
-    $('.metricas-preguntas').on('click',function () {
-        var dataId = $(this).attr("data-seccion");
-        $(this).attr("data-seccion", document.title);
-    });
-    $('.metricas-pregvermas').on('click',function () {
-        var dataId = $(this).attr("data-seccion");
-        $(this).attr("data-seccion", document.title);
-    });
-});
-</script>
-<div class="panel-group" id="accordion2"><!-- Pregunta 1 -->
-<div class="panel panel-default">
-<div class="panel-heading">
-<h4 class="panel-title"><a class="accordion-toggle tag-activo metricas-preguntas" data-parent="#accordion2" data-pregunta="¿Cómo puedo comprar un curso cultural?" data-seccion="" data-titulo="Preguntas frecuentes" data-toggle="collapse" href="#preguntaUno">¿Cómo puedo comprar un curso cultural?</a></h4>
-</div>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
 
-<div class="panel-collapse collapse in" id="preguntaUno">
-<div class="panel-body">
-  <p>Cuentas con dos opciones.</p>
-  <ol>
-  <li>Ingresa a<a href="http://www.diversioncolsubsidio.com/"> www.diversioncolsubsidio.com</a>, digita en el buscador el nombre del curso cultural y haz clic para conocer más información.</li>
-  <li>Haz clic en el icono ‘Cultura y recreación’, luego pulsa sobre ‘Curso’. Usa los filtros y configura tu búsqueda según el área, horario y sede para comprar tu servicio. Después de esto, escoge la tarjeta del curso de tu preferencia y cliquea en ella.</li>
-  </ol>
-  <p>En ambos casos, el paso siguiente es iniciar con tu usuario y clave, selecciona la persona que disfrutará el curso, configura el servicio y haz clic en ‘Continuar’.</p>
-  <p>Finalmente, cliquea en ‘Ir al pago’ y selecciona tu forma de pago. Cuando tu transacción sea aprobada, recibirás en tu correo electrónico un mensaje en el cual encontrarás la información correspondiente al servicio adquirido.</p>
-</div>
-</div>
-</div>
-<!-- Pregunta 2 -->
+    <script>
+    function acordeon(tituloAcordeon, tituloPestana, seccion){
+      dataLayer.push({
+        'event':'ga_event_acordeon',
+        'category':'Acordeones',
+        'action': tituloAcordeon,
+        'label': tituloPestana,
+        'seccion': seccion
+      });
+    }
+    </script>
+    <div class="panel-group" id="accordion">
+    <!-- inicio Escuelas fines de semana - alumnos antiguos-->
+    <div class="panel panel-default">
+    <div class="panel-heading">
+    <h4 class="panel-title"><a class="accordion-toggle tag-activo" data-parent="#accordion" data-toggle="collapse" href="#collapseOne" onclick="acordeon('Próximas fechas de inscripción','Cronograma Escuelas Deportivas Fin Semana 2022', 'Deportes')">Escuelas fines de semana - alumnos antiguos</a>&nbsp;</h4>
+    </div>
 
-<div class="panel panel-default">
-<div class="panel-heading">
-<h4 class="panel-title"><a class="accordion-toggle metricas-preguntas" data-parent="#accordion2" data-pregunta="¿Cómo funcionan las caminatas?" data-seccion="" data-titulo="Preguntas frecuentes" data-toggle="collapse" href="#preguntaDos">¿Cómo funcionan las caminatas?</a></h4>
-</div>
+    <div class="panel-collapse collapse in" id="collapseOne">
+    <div class="panel-body">
+    <div dir="ltr" style="margin-left:0pt;">
+    <p>Para los alumnos que vienen de un proceso formativo en nuestras escuelas y se encuentran cursando el ciclo anterior, las fechas de inscripci&oacute;n son:</p>
 
-<div class="panel-collapse collapse" id="preguntaDos">
-<div class="panel-body">
-<p>Te ofrecemos caminatas con diferentes niveles de dificultad, la duración del recorrido puede ser medio día o día completo e incluye transporte, acompañamiento, entre otros. Además, está dirigida a personas con buena condición física y de salud, y mayor de los 8 años de edad.</p>
-</div>
-</div>
-</div>
-<!-- Pregunta 3 -->
+    <table style="border-collapse:collapse; border:none">
+      <tbody>
+        <tr>
+          <td rowspan="2" style="background-color:#f6f7fc; vertical-align:top">
+          <p style="text-align:center"><span id="docs-internal-guid-582fd35c-7fff-f1de-6702-7fb4a32fdf8c"><strong>Ciclo</strong></span></p>
+          </td>
+          <td colspan="2" style="background-color:#f6f7fc; vertical-align:top">
+          <p style="text-align:center"><span id="docs-internal-guid-582fd35c-7fff-f1de-6702-7fb4a32fdf8c"><strong>Inscripciones antiguos</strong></span></p>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color:#f6f7fc; vertical-align:top">
+          <p style="text-align:center"><span id="docs-internal-guid-582fd35c-7fff-f1de-6702-7fb4a32fdf8c"><strong>Inicio</strong></span></p>
+          </td>
+          <td style="background-color:#f6f7fc; vertical-align:top">
+          <p style="text-align:center"><span id="docs-internal-guid-582fd35c-7fff-f1de-6702-7fb4a32fdf8c"><strong>Fin</strong></span></p>
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align:top">
+          <p style="text-align:center"><span id="docs-internal-guid-582fd35c-7fff-f1de-6702-7fb4a32fdf8c"><span style="background-color:transparent; font-family:arial; font-size:10pt">1</span></span></p>
+          </td>
+          <td style="vertical-align:top">
+          <p style="text-align:center">-</p>
+          </td>
+          <td style="vertical-align:top">
+          <p style="text-align:center">-</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align:top">
+          <p style="text-align:center"><span id="docs-internal-guid-582fd35c-7fff-f1de-6702-7fb4a32fdf8c"><span style="background-color:transparent; font-family:arial; font-size:10pt">2</span></span></p>
+          </td>
+          <td style="vertical-align:top">
+          <p style="text-align:center"><span id="docs-internal-guid-582fd35c-7fff-f1de-6702-7fb4a32fdf8c"><span style="background-color:transparent; font-family:arial; font-size:10pt">1-Feb</span></span></p>
+          </td>
+          <td style="vertical-align:top">
+          <p style="text-align:center"><span id="docs-internal-guid-582fd35c-7fff-f1de-6702-7fb4a32fdf8c"><span style="background-color:transparent; font-family:arial; font-size:10pt">8-Feb</span></span></p>
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align:top">
+          <p style="text-align:center"><span id="docs-internal-guid-582fd35c-7fff-f1de-6702-7fb4a32fdf8c"><span style="background-color:transparent; font-family:arial; font-size:10pt">3</span></span></p>
+          </td>
+          <td style="vertical-align:top">
+          <p style="text-align:center"><span id="docs-internal-guid-582fd35c-7fff-f1de-6702-7fb4a32fdf8c"><span style="background-color:transparent; font-family:arial; font-size:10pt">1-Mar</span></span></p>
+          </td>
+          <td style="vertical-align:top">
+          <p style="text-align:center"><span id="docs-internal-guid-582fd35c-7fff-f1de-6702-7fb4a32fdf8c"><span style="background-color:transparent; font-family:arial; font-size:10pt">8-Mar</span></span></p>
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align:top">
+          <p style="text-align:center"><span id="docs-internal-guid-582fd35c-7fff-f1de-6702-7fb4a32fdf8c"><span style="background-color:transparent; font-family:arial; font-size:10pt">4</span></span></p>
+          </td>
+          <td style="vertical-align:top">
+          <p style="text-align:center"><span id="docs-internal-guid-582fd35c-7fff-f1de-6702-7fb4a32fdf8c"><span style="background-color:transparent; font-family:arial; font-size:10pt">29-Mar</span></span></p>
+          </td>
+          <td style="vertical-align:top">
+          <p style="text-align:center"><span id="docs-internal-guid-582fd35c-7fff-f1de-6702-7fb4a32fdf8c"><span style="background-color:transparent; font-family:arial; font-size:10pt">5-Abr</span></span></p>
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align:top">
+          <p style="text-align:center"><span id="docs-internal-guid-582fd35c-7fff-f1de-6702-7fb4a32fdf8c"><span style="background-color:transparent; font-family:arial; font-size:10pt">5</span></span></p>
+          </td>
+          <td style="vertical-align:top">
+          <p style="text-align:center"><span id="docs-internal-guid-582fd35c-7fff-f1de-6702-7fb4a32fdf8c"><span style="background-color:transparent; font-family:arial; font-size:10pt">3-May</span></span></p>
+          </td>
+          <td style="vertical-align:top">
+          <p style="text-align:center"><span id="docs-internal-guid-582fd35c-7fff-f1de-6702-7fb4a32fdf8c"><span style="background-color:transparent; font-family:arial; font-size:10pt">10-May</span></span></p>
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align:top">
+          <p style="text-align:center"><span id="docs-internal-guid-582fd35c-7fff-f1de-6702-7fb4a32fdf8c"><span style="background-color:transparent; font-family:arial; font-size:10pt">6</span></span></p>
+          </td>
+          <td style="vertical-align:top">
+          <p style="text-align:center"><span id="docs-internal-guid-582fd35c-7fff-f1de-6702-7fb4a32fdf8c"><span style="background-color:transparent; font-family:arial; font-size:10pt">31-May</span></span></p>
+          </td>
+          <td style="vertical-align:top">
+          <p style="text-align:center"><span id="docs-internal-guid-582fd35c-7fff-f1de-6702-7fb4a32fdf8c">7-Jun</span></p>
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align:top">
+          <p style="text-align:center"><span id="docs-internal-guid-582fd35c-7fff-f1de-6702-7fb4a32fdf8c"><span style="background-color:transparent; font-family:arial; font-size:10pt">7</span></span></p>
+          </td>
+          <td style="vertical-align:top">
+          <p style="text-align:center"><span id="docs-internal-guid-582fd35c-7fff-f1de-6702-7fb4a32fdf8c"><span style="background-color:transparent; font-family:arial; font-size:10pt">28-Jun</span></span></p>
+          </td>
+          <td style="vertical-align:top">
+          <p style="text-align:center"><span id="docs-internal-guid-582fd35c-7fff-f1de-6702-7fb4a32fdf8c"><span style="background-color:transparent; font-family:arial; font-size:10pt">5-Jul</span></span></p>
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align:top">
+          <p style="text-align:center"><span id="docs-internal-guid-582fd35c-7fff-f1de-6702-7fb4a32fdf8c"><span style="background-color:transparent; font-family:arial; font-size:10pt">8</span></span></p>
+          </td>
+          <td style="vertical-align:top">
+          <p style="text-align:center"><span id="docs-internal-guid-582fd35c-7fff-f1de-6702-7fb4a32fdf8c"><span style="background-color:transparent; font-family:arial; font-size:10pt">26-Jul</span></span></p>
+          </td>
+          <td style="vertical-align:top">
+          <p style="text-align:center"><span id="docs-internal-guid-582fd35c-7fff-f1de-6702-7fb4a32fdf8c"><span style="background-color:transparent; font-family:arial; font-size:10pt">2-Ago</span></span></p>
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align:top">
+          <p style="text-align:center"><span id="docs-internal-guid-582fd35c-7fff-f1de-6702-7fb4a32fdf8c"><span style="background-color:transparent; font-family:arial; font-size:10pt">9</span></span></p>
+          </td>
+          <td style="vertical-align:top">
+          <p style="text-align:center"><span id="docs-internal-guid-582fd35c-7fff-f1de-6702-7fb4a32fdf8c"><span style="background-color:transparent; font-family:arial; font-size:10pt">23-Ago</span></span></p>
+          </td>
+          <td style="vertical-align:top">
+          <p style="text-align:center"><span id="docs-internal-guid-582fd35c-7fff-f1de-6702-7fb4a32fdf8c"><span style="background-color:transparent; font-family:arial; font-size:10pt">30-Ago</span></span></p>
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align:top">
+          <p style="text-align:center"><span id="docs-internal-guid-582fd35c-7fff-f1de-6702-7fb4a32fdf8c"><span style="background-color:transparent; font-family:arial; font-size:10pt">10</span></span></p>
+          </td>
+          <td style="vertical-align:top">
+          <p style="text-align:center"><span id="docs-internal-guid-582fd35c-7fff-f1de-6702-7fb4a32fdf8c"><span style="background-color:transparent; font-family:arial; font-size:10pt">20-Sep</span></span></p>
+          </td>
+          <td style="vertical-align:top">
+          <p style="text-align:center"><span id="docs-internal-guid-582fd35c-7fff-f1de-6702-7fb4a32fdf8c"><span style="background-color:transparent; font-family:arial; font-size:10pt">27-Sep</span></span></p>
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align:top">
+          <p style="text-align:center"><span id="docs-internal-guid-582fd35c-7fff-f1de-6702-7fb4a32fdf8c"><span style="background-color:transparent; font-family:arial; font-size:10pt">11</span></span></p>
+          </td>
+          <td style="vertical-align:top">
+          <p style="text-align:center"><span id="docs-internal-guid-582fd35c-7fff-f1de-6702-7fb4a32fdf8c"><span style="background-color:transparent; font-family:arial; font-size:10pt">18-Oct</span></span></p>
+          </td>
+          <td style="vertical-align:top">
+          <p style="text-align:center"><span id="docs-internal-guid-582fd35c-7fff-f1de-6702-7fb4a32fdf8c"><span style="background-color:transparent; font-family:arial; font-size:10pt">25-Oct</span></span></p>
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align:top">
+          <p style="text-align:center"><span id="docs-internal-guid-582fd35c-7fff-f1de-6702-7fb4a32fdf8c"><span style="background-color:transparent; font-family:arial; font-size:10pt">12</span></span></p>
+          </td>
+          <td style="vertical-align:top">
+          <p style="text-align:center"><span id="docs-internal-guid-582fd35c-7fff-f1de-6702-7fb4a32fdf8c"><span style="background-color:transparent; font-family:arial; font-size:10pt">15-Nov</span></span></p>
+          </td>
+          <td style="vertical-align:top">
+          <p style="text-align:center"><span id="docs-internal-guid-582fd35c-7fff-f1de-6702-7fb4a32fdf8c"><span style="background-color:transparent; font-family:arial; font-size:10pt">22-Nov</span></span></p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+    &nbsp;</div>
+    </div>
+    </div>
+    </div>
+    <!-- fin Escuelas fines de semana - alumnos antiguos-->
 
-<div class="panel panel-default">
-<div class="panel-heading">
-<h4 class="panel-title"><a class="accordion-toggle metricas-preguntas" data-parent="#accordion2" data-pregunta="¿Qué son los talleres culturales?" data-seccion="" data-titulo="Preguntas frecuentes" data-toggle="collapse" href="#preguntaTres">¿Qué son los talleres culturales? </a></h4>
-</div>
+    </div>
 
-<div class="panel-collapse collapse" id="preguntaTres">
-<div class="panel-body">
-<p>Los talleres son actividades de una única sesión de 120 minutos, donde desarrollarás manualidades de complejidad baja.</p>
-<p>Nuestra oferta de talleres es amplia y variada, puedes seleccionar entre mandalas, kamikara y plastilina, entre muchos otros, con capacidad para 30 personas y en modalidad virtual.</p>
-</div>
-</div>
-<!-- Pregunta 4 -->
-
-<div class="panel panel-default">
-<div class="panel-heading">
-<h4 class="panel-title"><a class="accordion-toggle metricas-preguntas" data-parent="#accordion2" data-pregunta="¿Con mi plan puedo ingresar a todos los gimnasios de Colsubsidio?" data-seccion="" data-titulo="Preguntas frecuentes" data-toggle="collapse" href="#preguntaCuatro">&iquest;Con mi plan puedo ingresar a todos los gimnasios de Colsubsidio? </a></h4>
-</div>
-
-<div class="panel-collapse collapse" id="preguntaCuatro">
-<div class="panel-body">
-<p>Si compras tu plan en el Club La Colina, Mazur&eacute;n o El Cubo, puedes acceder a los cuatro gimnasios, incluyendo el de Bellavista, de acuerdo con la disponibilidad y condiciones de servicio. Si compras tu plan en Bellavista, solo puedes ingresar al gimnasio de esta sede.</p>
-</div>
-</div>
-</div>
-<!-- Pregunta 5 -->
-
-<div class="panel panel-default">
-<div class="panel-heading">
-<h4 class="panel-title"><a class="accordion-toggle metricas-preguntas" data-parent="#accordion2" data-pregunta="¿Cómo funcionan las vacaciones recreativas?" data-seccion="" data-titulo="Preguntas frecuentes" data-toggle="collapse" href="#preguntaCinco">¿Cómo funcionan las vacaciones recreativas?</a></h4>
-</div>
-
-<div class="panel-collapse collapse" id="preguntaCinco">
-<div class="panel-body">
-<p>Al adquirir las tiqueteras accedes a 11 pr&aacute;cticas libres en los servicios de nataci&oacute;n, squash, tenis de campo y clases grupales. Ten en cuenta que los servicios est&aacute;n sujetos a disponibilidad y pueden variar seg&uacute;n la sede. Las pr&aacute;cticas tienen una duraci&oacute;n de 50 minutos e inician en horas en punto.<br />
-Recuerda que los servicios de tiquetera son de uso personal e intransferible.<br />
-Realiza tu reserva por la tienda virtual o de manera presencial en el club. &iexcl;Te esperamos!</p>
-</div>
-</div>
-</div>
-<!-- Pregunta 6 -->
-
-<div class="panel panel-default">
-<div class="panel-heading">
-<h4 class="panel-title"><a class="accordion-toggle" data-parent="#accordion2" data-pregunta="¿Cómo funcionan las vacaciones recreativas?" data-seccion="" data-titulo="Preguntas frecuentes" data-toggle="collapse" href="#preguntaSeis">¿Cómo funcionan las vacaciones recreativas?</a></h4>
-</div>
-
-<div class="panel-collapse collapse" id="preguntaSeis">
-<div class="panel-body">
-<p>Es un programa ofrecido a niños entre los rangos de 6 a 12 y de 13 a 17 años. El plan incluye visitas a sitios de interés, como granjas, parques de diversiones, clubes Colsubsidio, cinemas entre otros, con acompañamiento, servicio de alimentación y transporte.</p>
-</div>
-</div>
-</div>
-</div>
-<a class="see-more metricas-pregvermas btn btn-lg btn-pill" data-seccion="" data-titulo="Preguntas frecuentes" href="https://ayuda.colsubsidio.com/tienda-colsubsidio" target="_blank">Ver m&aacute;s</a>
+  </body>
+</html>
