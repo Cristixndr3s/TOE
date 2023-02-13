@@ -1,21 +1,114 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
 <style>
-.link a{
-display:inline;
-}
 
-.link a{
-display:none;
-}
-</style>
-    <div class="link">
-      <a onclick="mostrar('div')"> hola</a>
-  </div>
-  </body>
-</html>
+ .fila-pestanas-2{
+ background: #ffed00;
+ position:sticky;
+ top:108px;
+ z-index: 0;
+padding: 1px;
+ }
+
+ a.current{
+ font-size: 18px !important;
+ color: #333 !important;
+ }
+
+ a.current:hover{
+ color: #fff;
+ }
+
+ .fila{
+ display: inline-block;
+ padding: 5px;
+ }
+
+ </style>
+<p><br />
+<img alt="" src="/uploads/item/e2/images/TEO_1380x842_NoticiaHome%283%29.jpg" /><br /><br />Con el m&oacute;dulo de autogesti&oacute;n, accedes m&aacute;s f&aacute;cil y r&aacute;pido a la informaci&oacute;n de tus productos o servicios. Sin necesidad de trasladarte a nuestras sedes, puedes reservar y revisar planes, cambiar horarios y administrar los siguientes productos en un mismo lugar:</p>
+
+<ul>
+ <li>Tiqueteras</li>
+ <li>Pr&aacute;cticas libres</li>
+ <li>Planes de gimnasio</li>
+ <li>Escuelas deportivas</li>
+ <li>Pr&aacute;cticas, talleres y cursos culturales</li>
+</ul>
+
+<h2 >1. Antes de gestionar tus productos</h2>
+En nuestra p&aacute;gina, ve a la secci&oacute;n <strong>Ingresar</strong>, ubicada en la parte superior derecha de la pantalla. Desde all&iacute; accedes a tu cuenta o la puedes crear. Una vez hecho el registro, podr&aacute;s gestionar tu perfil, tiqueteras, turnos y planes. Si eres titular de la afiliaci&oacute;n, tambi&eacute;n cuentas con el acceso para gestionar productos de los integrantes de tu grupo familiar. Recuerda que para utilizar el m&oacute;dulo de autogesti&oacute;n debes tener productos activos, es decir, pagos.
+
+<p id="historial">&nbsp;</p>
+
+<div class="fila-pestanas-2">
+<ul style="margin:30px 0px">
+ <li class="fila"><a class="current" href="#historial">Conoce tu historial</a></li>
+ <li class="fila"><a class="current" href="#tiqueteras">Usa tus tiqueteras</a></li>
+ <li class="fila"><a class="current" href="#cancela">Cancela tus servicios</a></li>
+ <li class="fila"><a class="current" href="#reprograma">Reprograma tus servicios</a></li>
+ <li class="fila"><a class="current" href="#aplaza">Aplaza tus planes</a></li>
+</ul>
+</div>
+<div id="tiqueteras">
+<br /><br /><br />
+
+<h2>2. Conoce tu historial de informaci&oacute;n</h2>
+
+<p>En <strong>Mi perfil</strong> encontrar&aacute;s tu nombre, el de las personas que hacen parte de tu grupo familiar y los datos de cada una de ellas. Recuerda que esta informaci&oacute;n no es editable.</p>
+</div>
+
+<div id="cancela">
+<h2>3. Usa tus tiqueteras</h2>
+
+<p>Desde <strong>Mis tiqueteras</strong> puedes conocer su estado (activas o terminadas) y el n&uacute;mero de tiquetes disponibles. Solamente debes cliquear en el nombre de cada una.<br />
+<br />
+Para reservar con tu tiquetera o la de un integrante de tu grupo familiar, pulsa el bot&oacute;n <strong>Usar tiquetera</strong>, selecciona la fecha y, por &uacute;ltimo, la jornada y la hora.<br />
+<br />
+Luego, se activar&aacute; una ventana y te solicitar&aacute; validar la reserva de tu pr&aacute;ctica libre. Hazlo a trav&eacute;s del bot&oacute;n <strong>Confirmar</strong>.</p>
+</div>
+
+
+<h2>4. Cancela tus servicios</h2>
+
+<p>&iquest;Quieres conocer el detalle de las compras efectuadas o solicitar la cancelaci&oacute;n de tu escuela deportiva, curso, taller o pr&aacute;ctica cultural?<br />
+<div id="reprograma"><br />
+En <strong>Mis pagos</strong>, en la columna <strong>Acciones</strong>, haz clic en <strong>Detalle</strong> y encuentra la informaci&oacute;n correspondiente de tus pagos, as&iacute; como el bot&oacute;n <strong>Solicitar cancelaci&oacute;n</strong>.<br />
+<br />
+Si escoges esta &uacute;ltima opci&oacute;n, nos estaremos comunicando contigo para finalizar este proceso, por ello, es importante que est&eacute;s atento a los medios de contacto que registraste.<br />
+<br />
+En esta secci&oacute;n tambi&eacute;n encuentras otros datos como orden de la compra, estado (aprobado o rechazado), valor y fecha de tus transacciones.</p>
+</div>
+
+
+<h2>5. Reprograma tus servicios</h2>
+
+<p>Si t&uacute; o alguien de tu grupo familiar tienen pr&aacute;cticas libres, planes de gimnasio, escuelas deportivas o cursos activos, puedes reprogramarlos a trav&eacute;s de la secci&oacute;n <strong>Mis turnos</strong>. Solo debes seguir este paso a paso:</p>
+<div  id="aplaza">
+<ol>
+ <li>Selecciona el nombre de la persona.</li>
+ <li>Consulta los turnos programados en los recuadros del calendario.</li>
+ <li>Conoce las generalidades de la reserva y las dos opciones: devolver o cambiar el turno.</li>
+ <li>Al hacer clic en <strong>Devolver turno</strong>, de inmediato este se elimina del calendario, pierdes la reserva y se devuelve el turno a tu tiquetera.</li>
+ <li>Al hacer clic en <strong>Cambiar turno</strong>, escoge la nueva fecha, horario y jornada (tarde o noche).</li>
+</ol>
+Recuerda que las actividades devolver o cambiar turno solo se realizan en la sede que escogiste en la compra, es decir, no se puede modificar el lugar.
+
+<p>&nbsp;</p>
+</div>
+
+<div >
+<h2>6. Aplaza tus planes</h2>
+
+<p>Para conocer tus planes (activos o terminados) o los de tus beneficiarios, selecciona el nombre de la persona. Luego, aparecer&aacute;n los detalles del plan y la opci&oacute;n Aplazar.<br />
+<br />
+Desde esta secci&oacute;n puedes suspender, temporalmente, los planes de gimnasio o tiqueteras. Recuerda que los tiempos disponibles dependen de las pol&iacute;ticas de cada producto o servicio.<br />
+<br />
+Sigue estas indicaciones para aplazar correctamente tus planes:</p>
+
+<ol>
+ <li>Selecciona la fecha desde la cual deseas suspender el plan.</li>
+ <li>Desplaza la barra hasta que encuentres los d&iacute;as que deseas aplazar.</li>
+ <li>Al hacer clic en el bot&oacute;n <strong>Programar plazo</strong>, aparecer&aacute; una ventana con el detalle de la actividad (fecha, d&iacute;as de suspensi&oacute;n y c&oacute;mo quedar&aacute; el plan) y dos opciones: <strong>Cancelar</strong> o <strong>Confirmar</strong>. Si deseas continuar con tu cambio, finaliza pulsando la segunda opci&oacute;n.</li>
+</ol>
+
+<p>&nbsp;</p>
+</div>

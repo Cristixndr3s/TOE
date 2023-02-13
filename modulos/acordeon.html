@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <style>
+    .acordeon {
+        border-top: 1px solid #ddd;
+        border-right: 1px solid #ddd;
+        border-left: 1px solid #ddd;
+        width: 100%;
+        margin: 0 auto;
+
+    }
+    .acordeon-header{
+        background-color: #F6F7FC !important;
+        border-bottom: 1px solid #E2E8EE !important;
+        cursor: pointer;
+        padding: 15px;
+    }
+    .acordeon-header:after{
+        content: '\02795';
+        font-size: normal normal normal 14px/1 FontAwesome;
+        float: right;
+        font-size: 20px;
+        color: #00005b;
+    }
+    .acordeon-header.active:after{
+    content: '\02796';
+    }
+    .acordeon-content{
+    display: none;
+        padding: 1rem;
+        border-bottom: 1px solid #eee;
+    }
+    ul .acordeon{
+    display;none;
+    }
+    </style>
+
+        <ul class="acordeon" data-acordeon="open" style="list-style: none; padding:0px;">
+            <li>
+                <div class="acordeon-header">First</div>
+                <div class="acordeon-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo optio ea reprehenderit of!</div>
+            </li>
+            <li>
+                <div class="acordeon-header">Second</div>
+                <div class="acordeon-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo optio ea reprea!</div>
+            </li>
+            <li>
+                <div class="acordeon-header">Third</div>
+                <div class="acordeon-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo optio ea reprehenderit officiis, mollitia!</div>
+            </li>
+        </ul>
+
+      <script>
+    var acordeon = function () {
+        var data = $('.acordeon').attr('data-acordeon')
+        $('.acordeon-header').on('click', function () {
+            if (data === 'close')
+            {
+                $('.acordeon-content').slideUp();
+                if (($this).hasClass('active')) {
+                    $(this).toggleClass('active');
+                } else {
+                    $('.acordeon-header').removeClass('active');
+                    $(this).toggleClass('active');
+                }
+            } else {
+                $(this).toggleClass('active');
+            }
+            $(this).next('.acordeon-content').not(':animated').slideToggle();
+        })
+    }
+    acordeon();
+      </script>
+
+    </body>
+</html>
