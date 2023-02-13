@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <style>
+      .anclas{
+      background: #fff;
+      border-bottom: 1px solid rgba(51,51,51,.1);
+      position:sticky;
+      top:108px;
+      z-index: 0;
+      padding: 1px;
+      }
+      .anclas ul{
+        display: flex;
+        font-weight: 700;
+        margin: 0;
+        padding: 0;
+      }
+
+      a.current{
+      font-size: 18px !important;
+      color: #0067b1;
+      padding: 10px;
+      }
+
+      a.current:hover{
+      color: #0067b1;
+      border-bottom: 4px solid #fff8a2;
+      padding-bottom: 35px;
+      }
+      a.current.active{
+      border-bottom: 4px solid #ffd000;
+      padding-bottom: 35px;
+      }
+
+      .fila{
+      display: inline-block;
+      padding: 5px;
+      }
+    </style>
+
+<div class="anclas">
+<ul style="margin:30px 0px" id="list">
+ <li class="fila"><a class="current" href="#historial">Conoce tu historial</a></li>
+ <li class="fila"><a class="current" href="#tiqueteras">Usa tus tiqueteras</a></li>
+ <li class="fila"><a class="current" href="#cancela">Cancela tus servicios</a></li>
+ <li class="fila"><a class="current" href="#reprograma">Reprograma tus servicios</a></li>
+ <li class="fila"><a class="current" href="#aplaza">Aplaza tus planes</a></li>
+</ul>
+</div>
+
+<script>
+  const list = document.querySelector("#list");
+  list.addEventListener("click", function(event) {
+    const currentItem = event.target;
+    const activeItem = list.querySelector(".active");
+    if (activeItem) {
+      activeItem.classList.remove("active");
+    }
+    currentItem.classList.add("active");
+  });
+</script>
+
+  </body>
+</html>
