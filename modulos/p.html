@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <!--<script type="text/javascript">
+$(document).ready(function(){
+    $('.metricas-pestañas').on('click',function () {
+        var dataId = $(this).attr("data-seccion");
+        $(this).attr("data-seccion", document.title);
+    });
+});
+</script>-->
+
+<script>
+posicionarMenu();
+
+$(window).scroll(function() {
+    posicionarMenu();
+});
+
+function posicionarMenu() {
+ var altura_del_header = $('.alto-cabezote').outerHeight(true);
+var altura_del_menu = $('.fila-pestanas').outerHeight(true);
+
+    if ($(window).scrollTop() >= altura_del_header) {
+        $('.fila-pestanas').addClass('fixed');
+        $('.seccion-noticias').css('margin-top', (altura_del_menu) + 'px');
+    } else {
+        $('.fila-pestanas').removeClass('fixed');
+        $('.seccion-noticias').css('margin-top', '0px');
+    }
+}
+
+</script>
+
+<ul>
+	<li><a class="metricas-pestañas" data-pestanas="Lo último" data-seccion="pagina" href="#categoria_lo_ultimo">Lo &uacute;ltimo</a></li>
+	<li><a class="metricas-pestañas" data-pestanas="Destacados" data-seccion="pagina" href="#categoria_destacados">Destacados</a></li>
+	<li><a class="metricas-pestañas" data-pestanas="Prográmate" data-seccion="pagina" href="#programate">Progr&aacute;mate</a></li>
+</ul>
+
+  </body>
+</html>
