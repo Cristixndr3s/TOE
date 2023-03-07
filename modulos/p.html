@@ -1,46 +1,52 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <!--<script type="text/javascript">
-$(document).ready(function(){
-    $('.metricas-pestañas').on('click',function () {
-        var dataId = $(this).attr("data-seccion");
-        $(this).attr("data-seccion", document.title);
-    });
-});
-</script>-->
-
-<script>
-posicionarMenu();
-
-$(window).scroll(function() {
-    posicionarMenu();
-});
-
-function posicionarMenu() {
- var altura_del_header = $('.alto-cabezote').outerHeight(true);
-var altura_del_menu = $('.fila-pestanas').outerHeight(true);
-
-    if ($(window).scrollTop() >= altura_del_header) {
-        $('.fila-pestanas').addClass('fixed');
-        $('.seccion-noticias').css('margin-top', (altura_del_menu) + 'px');
-    } else {
-        $('.fila-pestanas').removeClass('fixed');
-        $('.seccion-noticias').css('margin-top', '0px');
-    }
+<style>
+.conta{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
 }
-
-</script>
-
-<ul>
-	<li><a class="metricas-pestañas" data-pestanas="Lo último" data-seccion="pagina" href="#categoria_lo_ultimo">Lo &uacute;ltimo</a></li>
-	<li><a class="metricas-pestañas" data-pestanas="Destacados" data-seccion="pagina" href="#categoria_destacados">Destacados</a></li>
-	<li><a class="metricas-pestañas" data-pestanas="Prográmate" data-seccion="pagina" href="#programate">Progr&aacute;mate</a></li>
-</ul>
-
-  </body>
-</html>
+.conta .card{
+  width: 330px;
+  height: 400px !important;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 20px;
+  text-align: center;
+  transition: all 0.25s;
+}
+.conta .card:hover{
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+.conta .card img{
+  width: 330px;
+  height: 180px;
+}
+.conta .card h4{
+  font-weight: 600;
+  color: #0369b2;
+}
+.conta .card p{
+  padding: 0 1rem;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1;
+}
+</style>
+<div class="conta">
+  <div class="card">
+    <img style="border-radius: 10px 10px 0 0" src="https://clubescolsubsidio.co/wp-content/uploads/2022/01/taekwondo-torneo.jpg" vspace="10">
+    <h4><strong>V FESTIVAL Y TORNEO DE FÚTBOL</strong></h4>
+    <p style="line-height: 120%;">
+      <strong>Realización: </strong>2 septiembre al 15 octubre<br>
+      <strong>Horario: </strong>1:00 a.m a 7:00 p.m<br>
+      <strong>Inscripciones: </strong>Festival: 2 septiembre al 15 octubre 1:00 a 7:00 pm<br>Torneo: 2 septiembre al 15 octubre 1:00 a 7:00 pm<br>EXAMENES TAEKWONDO 21 y 22 de octubre 8:00 a 5:00 pm
+      <strong>Ubicación: </strong>Cancha de futbol<br>
+    </p>
+  <!--  <hr style="border-color:#fff000;">
+    <p style="line-height: 120%;">
+      <strong> <a href="https://www.diversioncolsubsidio.com/deportes-eventos#/vitrina?clasificacion=467 ">Canales de compra</a> </strong>
+    </p>-->
+  </div>
+</div>
